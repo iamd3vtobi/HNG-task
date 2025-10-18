@@ -1,0 +1,212 @@
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: whitesmoke;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1000px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .card-header {
+              background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+            padding: 40px 30px 80px;
+            position: relative;
+        }
+
+        .avatar-container {
+            display: flex;
+            justify-content: center;
+            margin-top: -60px;
+            margin-bottom: 20px;
+        }
+
+        .avatar-figure {
+            margin: 0;
+        }
+
+        .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;            
+            object-fit: cover;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 80px;
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .user-name {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: darkblue;
+            margin-bottom: 10px;
+        }
+
+        .user-bio {
+            text-align: center;
+            color: darkblue;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .timestamp {
+            text-align: center;
+            font-size: 12px;
+            color:  #19191a;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            list-style: none;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: darkblue;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .social-link:hover {
+            background: #000000;
+            color: white;
+        }
+
+        .social-link:focus {
+            outline: 3px solid #667eea;
+            outline-offset: 2px;
+        }
+
+        .lists-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .list-section {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .list-title {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            color: darkblue;
+            margin-bottom: 12px;
+        }
+
+        .list {
+            list-style: none;
+        }
+
+        .list-item {
+            list-style-type: circle;
+            padding: 8px 0;
+            color: #0e0e0e;
+            display: flex;
+            align-items: center;
+        }
+
+        .list-item::before {
+            content: "\2023";
+            color: #667eea;
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .profile-card {
+                display: grid;
+                grid-template-columns: 300px 1fr;
+            }
+
+            .card-header {
+                padding: 40px 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            .avatar-container {
+                margin-top: 0;
+            }
+
+            .card-content {
+                padding: 40px;
+            }
+
+            .user-name {
+                text-align: left;
+            }
+
+            .user-bio {
+                text-align: left;
+            }
+
+            .timestamp {
+                text-align: left;
+            }
+
+            .social-links {
+                justify-content: flex-start;
+            }
+
+            .lists-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding: 10px;
+            }
+
+            .card-content {
+                padding: 20px;
+            }
+
+            .user-name {
+                font-size: 24px;
+            }
+        }

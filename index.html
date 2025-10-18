@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asaolu | Profile card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.css">
+    </head>
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <div class="card-header">
+            <div class="avatar-container">
+                <figure class="avatar-figure">
+                    <img 
+                        src="thumbnails/img3.webp" 
+                        alt="Picture of Asaolu"
+                        class="avatar"
+                        data-testid="test-user-avatar" loading="lazy"
+                    />
+                </figure>
+            </div>
+        </div>
+
+        <div class="card-content">
+            <header>
+                <h2 class="user-name" data-testid="test-user-name">ASAOLU ABIODUN OLUWATOBI</h2>
+            </header>
+
+            <p class="user-bio" data-testid="test-user-bio">
+                <strong>Fullstack JavaScript Developer</strong> passionate about creating beautiful and functional web experiences. 
+                I love learning new technologies and sharing knowledge with the community. Whem I am not coding, then i'm probably saving some lifes at the hospital. I am a Medical Laboratory Scientist (In view) 
+            </p>
+
+            <div class="timestamp">
+                 <strong>Current time (in miliseconds): <span data-testid="test-user-time" id="currentTime"></span>ms</strong>
+            </div>
+
+            <nav aria-label="Social media links">
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li>
+                        <a 
+                            href="https://x.com/bellscode" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="social-link"
+                            data-testid="test-user-social-twitter"
+                            aria-label="Visit Twitter profile"
+                        ><i class="fab fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://github.com/iamd3vtobi" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="social-link"
+                            data-testid="test-user-social-github"
+                            aria-label="Visit GitHub profile"
+                        ><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="lists-container">
+                <section class="list-section">
+                    <h3 class="list-title"> MY HOBBIES</h3>
+                    <ul class="list" data-testid="test-user-hobbies">
+                        <li class="list-item">Web Development Projects</li>
+                        <li class="list-item">Design and creativity</li>
+                        <li class="list-item">Digital Branding</li>
+                        <li class="list-item">Writing and Communication</li>
+                        <li class="list-item">Technology Learning</li>
+
+                    </ul>
+                </section>
+
+                <section class="list-section">
+                    <h3 class="list-title">MY DISLIKES</h3>
+                    <ul class="list" data-testid="test-user-dislikes">
+                        <li class="list-item">Poorly documented code</li>
+                        <li class="list-item">Skipping breakfast</li>
+                        <li class="list-item">Traffic jams</li>
+                        <li class="list-item">Browser compatibility bugs</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
